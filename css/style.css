@@ -54,9 +54,10 @@ p{
     background: #fff;
     color: #41464B;
 }
-.btn-blue{
+.btn-blue, .btn-blue:active{
     border-color: #34C6D3;
     color: #34C6D3;
+    background: #FFFFFF;
 }
 .btn-blue:hover,
 .btn-blue:focus{
@@ -545,11 +546,13 @@ form .form-control{
 
 .btn-back-to-top{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 24px;
+    bottom: 90px;
+    right: 25px;
+    font-size: 28px;
     padding: 5px 15px;
     display: none;
+    border-radius: 100%;
+    background: none;
 }
 
 /********************************************************
@@ -610,21 +613,41 @@ form .form-control{
 }
 
 
+/*******************************FLOATING BUTTON*******************************************/
+
+.float{
+    z-index: 450;
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:80px;
+    right:18px;
+    background-color:#34C6D3;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #41464B;
+}
+
+.my-float{
+    margin-left: -4px;
+}
+
+.float:hover{
+    background: #FFFFFF;
+    color: #34C6D3;
+    cursor: pointer;
+    border: 1px dashed #FFFFFF;
+    box-shadow: 2px 2px 3px #45464A;
+}
 
 
+/**************************CHAT MODAL****************************/
+@media(min-width: 720px){
+    .modal-dialog{
+        position: absolute;
+        bottom: 140px;
+        right: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+}
